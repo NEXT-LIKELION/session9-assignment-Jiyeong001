@@ -1,0 +1,305 @@
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 390px;
+    background: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 390px;
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+}
+
+header .icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+header .icons img {
+    width: 26px;
+    height: 26px;
+    filter: brightness(0.5);
+}
+
+main {
+    flex-grow: 1;
+    padding-top: 72px;
+    padding-bottom: 80px;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    height: calc(100vh - 140px);
+    min-height: calc(100vh - 140px);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 390px;
+}
+
+.card {
+    background: white;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 2px 0;
+}
+
+.round-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+.round-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #222;
+    text-align: center;
+    width: 100%;
+    min-height: 60px;
+}
+
+.card-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 360px;
+    margin: 10px auto;
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.card-item:last-child {
+    border-bottom: none;
+}
+
+.card-item li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header .new-icon {
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.button {
+    background-color: gray
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+   
+}
+
+footer {
+    background: white;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px 10px 0 0;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 12px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+    filter: brightness(0.5);
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.circle-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3182f6;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.rounded-square-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #34c759;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.account-name,
+.account-balance {
+    margin: 0;
+}
+
+.button-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+.button-list li {
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.button-list li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%;
+    background-color: #ddd;
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.account-name {
+    font-size: 14px;
+    color: #333;
+}
+
+.account-balance {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.increase {
+    color: red;
+}
